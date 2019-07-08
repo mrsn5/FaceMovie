@@ -3,25 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F07BC47C8142893C0AF24EB /* Pods_FaceMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A2B630CB2A91A0E1F4D078 /* Pods_FaceMovie.framework */; };
+		C35C613322BF916A00A51CE6 /* ShotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C613222BF916A00A51CE6 /* ShotButton.swift */; };
+		C35C613522BF9B5C00A51CE6 /* BorderedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C613422BF9B5C00A51CE6 /* BorderedImageView.swift */; };
+		C3634A6E22BED11C002B03E5 /* MasksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634A6D22BED11C002B03E5 /* MasksCollectionView.swift */; };
+		C3634A7022BED630002B03E5 /* ARCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634A6F22BED630002B03E5 /* ARCameraVC.swift */; };
+		C3634A7222BED75B002B03E5 /* RemoteFaceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634A7122BED75B002B03E5 /* RemoteFaceFilter.swift */; };
+		C3634A7422BED805002B03E5 /* VirtualContentUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634A7322BED805002B03E5 /* VirtualContentUpdater.swift */; };
 		C3BF540922BEAC3600C04008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF540822BEAC3600C04008 /* AppDelegate.swift */; };
-		C3BF540B22BEAC3600C04008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF540A22BEAC3600C04008 /* ViewController.swift */; };
+		C3BF540B22BEAC3600C04008 /* MyCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF540A22BEAC3600C04008 /* MyCollectionVC.swift */; };
 		C3BF540E22BEAC3600C04008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BF540C22BEAC3600C04008 /* Main.storyboard */; };
 		C3BF541022BEAC3700C04008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BF540F22BEAC3700C04008 /* Assets.xcassets */; };
 		C3BF541322BEAC3700C04008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BF541122BEAC3700C04008 /* LaunchScreen.storyboard */; };
+		C3BF541F22BEB81F00C04008 /* FaceMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3BF541D22BEB81F00C04008 /* FaceMovie.xcdatamodeld */; };
+		C3BF542122BEBA5100C04008 /* QRScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF542022BEBA5100C04008 /* QRScanVC.swift */; };
+		C3BF542322BEC74100C04008 /* MaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF542222BEC74100C04008 /* MaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A2B630CB2A91A0E1F4D078 /* Pods_FaceMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAAACD4D3693EC3442BC47D /* Pods-FaceMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceMovie.debug.xcconfig"; path = "Target Support Files/Pods-FaceMovie/Pods-FaceMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		9BEC80E725D2248C4E3FABD7 /* Pods-FaceMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceMovie.release.xcconfig"; path = "Target Support Files/Pods-FaceMovie/Pods-FaceMovie.release.xcconfig"; sourceTree = "<group>"; };
+		C35C613222BF916A00A51CE6 /* ShotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotButton.swift; sourceTree = "<group>"; };
+		C35C613422BF9B5C00A51CE6 /* BorderedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedImageView.swift; sourceTree = "<group>"; };
+		C3634A6D22BED11C002B03E5 /* MasksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksCollectionView.swift; sourceTree = "<group>"; };
+		C3634A6F22BED630002B03E5 /* ARCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraVC.swift; sourceTree = "<group>"; };
+		C3634A7122BED75B002B03E5 /* RemoteFaceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFaceFilter.swift; sourceTree = "<group>"; };
+		C3634A7322BED805002B03E5 /* VirtualContentUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentUpdater.swift; sourceTree = "<group>"; };
 		C3BF540522BEAC3600C04008 /* FaceMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BF540822BEAC3600C04008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3BF540A22BEAC3600C04008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3BF540A22BEAC3600C04008 /* MyCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionVC.swift; sourceTree = "<group>"; };
 		C3BF540D22BEAC3600C04008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3BF540F22BEAC3700C04008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3BF541222BEAC3700C04008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3BF541422BEAC3700C04008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BF541E22BEB81F00C04008 /* FaceMovie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceMovie.xcdatamodel; sourceTree = "<group>"; };
+		C3BF542022BEBA5100C04008 /* QRScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanVC.swift; sourceTree = "<group>"; };
+		C3BF542222BEC74100C04008 /* MaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F07BC47C8142893C0AF24EB /* Pods_FaceMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1DD2233AE26DE1D5D4901BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09A2B630CB2A91A0E1F4D078 /* Pods_FaceMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3BF53FC22BEAC3600C04008 = {
 			isa = PBXGroup;
 			children = (
 				C3BF540722BEAC3600C04008 /* FaceMovie */,
 				C3BF540622BEAC3600C04008 /* Products */,
+				F2BD24BDCFB3267FD957B378 /* Pods */,
+				C1DD2233AE26DE1D5D4901BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +87,56 @@
 		C3BF540722BEAC3600C04008 /* FaceMovie */ = {
 			isa = PBXGroup;
 			children = (
+				C3BF541C22BEB21D00C04008 /* Models */,
+				C3BF541B22BEB21100C04008 /* Controllers */,
+				C3BF541A22BEB20B00C04008 /* Views */,
 				C3BF540822BEAC3600C04008 /* AppDelegate.swift */,
-				C3BF540A22BEAC3600C04008 /* ViewController.swift */,
 				C3BF540C22BEAC3600C04008 /* Main.storyboard */,
 				C3BF540F22BEAC3700C04008 /* Assets.xcassets */,
 				C3BF541122BEAC3700C04008 /* LaunchScreen.storyboard */,
 				C3BF541422BEAC3700C04008 /* Info.plist */,
 			);
 			path = FaceMovie;
+			sourceTree = "<group>";
+		};
+		C3BF541A22BEB20B00C04008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF542222BEC74100C04008 /* MaskCell.swift */,
+				C3634A6D22BED11C002B03E5 /* MasksCollectionView.swift */,
+				C35C613222BF916A00A51CE6 /* ShotButton.swift */,
+				C35C613422BF9B5C00A51CE6 /* BorderedImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3BF541B22BEB21100C04008 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF540A22BEAC3600C04008 /* MyCollectionVC.swift */,
+				C3BF542022BEBA5100C04008 /* QRScanVC.swift */,
+				C3634A6F22BED630002B03E5 /* ARCameraVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3BF541C22BEB21D00C04008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF541D22BEB81F00C04008 /* FaceMovie.xcdatamodeld */,
+				C3634A7122BED75B002B03E5 /* RemoteFaceFilter.swift */,
+				C3634A7322BED805002B03E5 /* VirtualContentUpdater.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2BD24BDCFB3267FD957B378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DAAACD4D3693EC3442BC47D /* Pods-FaceMovie.debug.xcconfig */,
+				9BEC80E725D2248C4E3FABD7 /* Pods-FaceMovie.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3BF541722BEAC3700C04008 /* Build configuration list for PBXNativeTarget "FaceMovie" */;
 			buildPhases = (
+				17922BF6D51D0154AF25E742 /* [CP] Check Pods Manifest.lock */,
 				C3BF540122BEAC3600C04008 /* Sources */,
 				C3BF540222BEAC3600C04008 /* Frameworks */,
 				C3BF540322BEAC3600C04008 /* Resources */,
+				328960395A7A59FCD58F6973 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +207,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17922BF6D51D0154AF25E742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		328960395A7A59FCD58F6973 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceMovie/Pods-FaceMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceMovie/Pods-FaceMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceMovie/Pods-FaceMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3BF540122BEAC3600C04008 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BF540B22BEAC3600C04008 /* ViewController.swift in Sources */,
+				C3634A7022BED630002B03E5 /* ARCameraVC.swift in Sources */,
+				C3BF541F22BEB81F00C04008 /* FaceMovie.xcdatamodeld in Sources */,
+				C3634A7422BED805002B03E5 /* VirtualContentUpdater.swift in Sources */,
+				C3634A7222BED75B002B03E5 /* RemoteFaceFilter.swift in Sources */,
+				C3BF542322BEC74100C04008 /* MaskCell.swift in Sources */,
+				C3634A6E22BED11C002B03E5 /* MasksCollectionView.swift in Sources */,
+				C3BF540B22BEAC3600C04008 /* MyCollectionVC.swift in Sources */,
+				C3BF542122BEBA5100C04008 /* QRScanVC.swift in Sources */,
 				C3BF540922BEAC3600C04008 /* AppDelegate.swift in Sources */,
+				C35C613322BF916A00A51CE6 /* ShotButton.swift in Sources */,
+				C35C613522BF9B5C00A51CE6 /* BorderedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +408,7 @@
 		};
 		C3BF541822BEAC3700C04008 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAAACD4D3693EC3442BC47D /* Pods-FaceMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +427,7 @@
 		};
 		C3BF541922BEAC3700C04008 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BEC80E725D2248C4E3FABD7 /* Pods-FaceMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +466,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3BF541D22BEB81F00C04008 /* FaceMovie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3BF541E22BEB81F00C04008 /* FaceMovie.xcdatamodel */,
+			);
+			currentVersion = C3BF541E22BEB81F00C04008 /* FaceMovie.xcdatamodel */;
+			path = FaceMovie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C3BF53FD22BEAC3600C04008 /* Project object */;
 }

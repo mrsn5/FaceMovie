@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SvrfSDK
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SvrfSDK.authenticate(onSuccess: {
+            print("Successfully authenticated with the Svrf API!")
+        }, onFailure: { err in
+            print("Could not authenticate with the Svrf API: \(err)")
+        })
+        
+        let query = "Comic Book"
+        print("Searching for \(query)")
+        
+        let searchOptions = SvrfOptions(type: [._3d])
+        
+        SvrfSDK.search(query: query, options: searchOptions, onSuccess: { (media, n) in
+            print("=== Got \(media.count) results, n = \(n ?? 0)")
+            for m in media {
+                if let title = m.title, let url = m.canonical, let id = m.id {
+                    print("\(title): \(url): \(id)")
+                }
+            }
+        }) { (err) in
+            print("Could not search for FaceFilters: \(err.svrfDescription ?? "")")
+        }
+        
+    
         return true
     }
 
@@ -41,6 +67,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    // MARK: - Core Data stack
+    lazy var persistentContainer: NSPersistentContainer = {
+        /*
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
+         */
+        let container = NSPersistentContainer(name: "FaceMovie")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+    // MARK: - Core Data Saving support
+    func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
 
 }
 

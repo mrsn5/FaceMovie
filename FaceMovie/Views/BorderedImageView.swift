@@ -10,12 +10,25 @@ import UIKit
 
 class BorderedImageView: UIImageView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        sharedInit()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        sharedInit()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        sharedInit()
+    }
+    
+    func sharedInit() {
+        layer.masksToBounds = true
+        layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).cgColor
+        layer.borderWidth = 1.0
+        layer.cornerRadius = 10
+    }
 
 }

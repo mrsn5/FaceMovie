@@ -10,12 +10,16 @@ import UIKit
 
 class MasksCollectionView: UICollectionView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        if let collectionViewFlowLayout = collectionViewLayout as? UICollectionViewFlowLayout {
+            collectionViewFlowLayout.minimumLineSpacing = 0
+//            collectionViewFlowLayout.scrollDirection = .horizontal
+        }
+//
+//        showsHorizontalScrollIndicator = false
+//        showsVerticalScrollIndicator = false
+//        alwaysBounceHorizontal = true
+//        clipsToBounds = false
     }
-    */
 
 }
